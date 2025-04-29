@@ -135,7 +135,7 @@ const char **print_resistor_colors(float resistance) {
     // cores correspondentes aos digitos
     result[0] = color_digit(first_digit);
     result[1] = color_digit(second_digit);
-    result[2] = color_digit(order);
+    result[2] = color_digit(order - 1);
 
     printf("Resistencia medida: %.1f Ohms, ajustada para: %.1f Ohms\n", resistance, adjusted);
 
